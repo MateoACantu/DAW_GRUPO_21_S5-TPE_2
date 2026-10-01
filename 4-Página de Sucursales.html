@@ -1,119 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sucursales - Estudio de Fotografía</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sucursales - Estudio de Fotografía</title>
 
-  <!-- Bootstrap 4 (misma versión que index.html: usa data-ride / data-slide-to) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Estilos propios del sitio (paleta y logo definidos por las partes 5 y 6) -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!--Estilos compartidos -->
+    <link rel="stylesheet" href="css/general.css" />
 
-  <!-- Logo: enlaza a la página principal -->
-  <a href="1-P%C3%A1gina%20Principal.html">
-    <img src="im%C3%A1genes/logo.png" alt="Logo Estudio de Fotografía" class="d-block mx-auto mt-2" height="60">
-  </a>
+    <!--Estilos de sucursales -->
+    <link rel="stylesheet" href="css/sucursales.css" />
 
-  <!-- Menú de navegación (idéntico en las 4 páginas) -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal"
-            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="1-P%C3%A1gina%20Principal.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="2-P%C3%A1gina%20promociones.html">Promociones</a></li>
-        <li class="nav-item"><a class="nav-link" href="3-P%C3%A1gina%20de%20listado%20de%20productos.html">Productos</a></li>
-        <li class="nav-item active"><a class="nav-link" href="4-P%C3%A1gina%20de%20Sucursales.html">Sucursales</a></li>
+    <!-- Estilos propios del sitio (paleta y logo definidos por las partes 5 y 6) -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Logo: enlaza a la página principal -->
+    <header class="encabezado">
+      <div class="container text-center py-3">
+        <a href="1-Página Principal.html">
+          <img
+            src="imgs/logo.jpg"
+            alt="Logo Estudio de Fotografía"
+            class="logo"
+            height="80"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Menú de navegación unificado -->
+    <nav class="navbar navbar-expand-sm navbar-dark menu-principal">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="1-Página Principal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="2-Página promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="3-Página de listado de productos.html"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
+        </li>
       </ul>
+    </nav>
+
+    <!-- Contenido -->
+
+    <div class="container mt-4 mb-5">
+      <div class="encabezado-pagina text-center mb-5">
+        <h1 class="titulo pagina">Nuestras Sucursales</h1>
+        <p class="subtitulo-pagina">
+          Encuentra la sucursal más cercana a ti y visítanos para disfrutar de
+          nuestros servicios de fotografía.
+        </p>
+      </div>
+
+      <!-- Fila 1 -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-001.jpg"
+              class="card-img-top"
+              alt="Sucursal Guayaquil Centro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Guayaquil Centro</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Av. 9 de Octubre y Boyacá
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Guayaquil</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-002.jpg"
+              class="card-img-top"
+              alt="Sucursal Quito Norte"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Quito Norte</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Av. República del Salvador y
+                Naciones Unidas
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Quito</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-003.jpg"
+              class="card-img-top"
+              alt="Sucursal Cuenca"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Cuenca</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Calle Larga y Av. Huayna Cápac
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Cuenca</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-004.jpg"
+              class="card-img-top"
+              alt="Sucursal Milagro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Milagro</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Av. Chile y Calle Bolívar
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Milagro</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-005.jpg"
+              class="card-img-top"
+              alt="Sucursal Manta"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Manta</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Av. Malecón y Calle 12
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Manta</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/sucursales/SUC-006.jpg"
+              class="card-img-top"
+              alt="Sucursal Ambato"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sucursal Ambato</h5>
+              <p class="card-text mb-1">
+                <strong>Dirección:</strong> Av. Cevallos y Calle Mera
+              </p>
+              <p class="card-text"><strong>Ciudad:</strong> Ambato</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <!-- Contenido -->
-  <div class="container mt-4 mb-5">
-    <h2 class="text-center mb-4">Nuestras Sucursales</h2>
-
-    <!-- Fila 1 -->
-    <div class="row mb-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal1.jpg" class="card-img-top" alt="Sucursal Guayaquil Centro">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Guayaquil Centro</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Av. 9 de Octubre y Boyacá</p>
-            <p class="card-text"><strong>Ciudad:</strong> Guayaquil</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal2.jpg" class="card-img-top" alt="Sucursal Quito Norte">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Quito Norte</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Av. República del Salvador y Naciones Unidas</p>
-            <p class="card-text"><strong>Ciudad:</strong> Quito</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal3.jpg" class="card-img-top" alt="Sucursal Cuenca">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Cuenca</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Calle Larga y Av. Huayna Cápac</p>
-            <p class="card-text"><strong>Ciudad:</strong> Cuenca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fila 2 -->
-    <div class="row mb-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal4.jpg" class="card-img-top" alt="Sucursal Milagro">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Milagro</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Av. Chile y Calle Bolívar</p>
-            <p class="card-text"><strong>Ciudad:</strong> Milagro</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal5.jpg" class="card-img-top" alt="Sucursal Manta">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Manta</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Av. Malecón y Calle 12</p>
-            <p class="card-text"><strong>Ciudad:</strong> Manta</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="im%C3%A1genes/sucursal6.jpg" class="card-img-top" alt="Sucursal Ambato">
-          <div class="card-body">
-            <h5 class="card-title">Sucursal Ambato</h5>
-            <p class="card-text mb-1"><strong>Dirección:</strong> Av. Cevallos y Calle Mera</p>
-            <p class="card-text"><strong>Ciudad:</strong> Ambato</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts de Bootstrap 4 (jQuery, Popper y bundle) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <!-- Scripts de Bootstrap 4 (jQuery, Popper y bundle) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
-
