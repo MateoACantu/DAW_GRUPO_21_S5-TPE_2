@@ -1,288 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudio de Fotografía | Listado de Productos</title>
     <!-- Bootstrap 4.6.2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!--Estilos compartidos -->
+    <link rel="stylesheet" href="css/general.css" />
+
+    <!--Estilos de productos -->
+    <link rel="stylesheet" href="css/productos.css" />
+
     <!-- Scripts de Bootstrap y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Logo del sitio, enlaza a la página principal -->
-    <div class="text-center mt-4 mb-2">
+    <header class="encabezado">
+      <div class="container text-center py-3">
         <a href="1-Página Principal.html">
-            <img src="imgs/imagen1.png" alt="Logo Estudio de Fotografía" height="80">
+          <img
+            src="imgs/logo.jpg"
+            alt="Logo Estudio de Fotografía"
+            class="logo"
+            height="80"
+          />
         </a>
-    </div>
+      </div>
+    </header>
 
     <!-- Menú de navegación unificado -->
-    <nav class="navbar navbar-expand-sm justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="1-Página Principal.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="2-Página promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="3-Página de listado de productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark menu-principal">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="1-Página Principal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="2-Página promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="3-Página de listado de productos.html"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Contenido Principal: Listado de Productos -->
     <div class="container mt-4 mb-5">
-        <h2 class="text-center mb-4">"PRODUCTOS"</h2>
-
-        <!-- Fila 1 (Productos 1 al 3) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 1" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-001</p>
-                        <h5 class="card-title">Cámara DSLR Profesional</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 15 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $850.00</p>
-                    </div>
-                </div>
+      <div class="encabezado-pagina text-center mb-5">
+        <h1 class="titulo pagina">Nuestros Productos</h1>
+        <p class="subtitulo-pagina">
+          Equipos y accesorios para fotografía profesional
+        </p>
+      </div>
+      <!-- Fila 1 (Productos 1 al 3) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-001.jpg"
+              class="card-img-top p-3"
+              alt="Producto 1"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-001</p>
+              <h5 class="card-title">Cámara DSLR Profesional</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 15 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $850.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 2" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-002</p>
-                        <h5 class="card-title">Lente 50mm f/1.8</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 25 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $180.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 3" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-003</p>
-                        <h5 class="card-title">Trípode de Aluminio</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 30 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $95.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <!-- Fila 2 (Productos 4 al 6) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 4" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-004</p>
-                        <h5 class="card-title">Flash de Estudio 300W</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 12 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $220.00</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-002.jpg"
+              class="card-img-top p-3"
+              alt="Producto 2"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-002</p>
+              <h5 class="card-title">Lente 50mm f/1.8</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 25 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $180.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 5" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-005</p>
-                        <h5 class="card-title">Softbox 60x90cm</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 20 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $45.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 6" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-006</p>
-                        <h5 class="card-title">Mochila Fotográfica Antirrobo</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 18 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $75.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <!-- Fila 3 (Productos 7 al 9) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 7" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-007</p>
-                        <h5 class="card-title">Tarjeta SD 128GB V90</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 40 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $110.00</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-003.jpg"
+              class="card-img-top p-3"
+              alt="Producto 3"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-003</p>
+              <h5 class="card-title">Trípode de Aluminio</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 30 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $95.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 8" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-008</p>
-                        <h5 class="card-title">Reflector Circular 5 en 1</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 22 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $25.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 9" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-009</p>
-                        <h5 class="card-title">Kit de Limpieza para Lentes</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 50 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $15.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Fila 4 (Productos 10 al 12) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 10" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-010</p>
-                        <h5 class="card-title">Estabilizador Gimbal 3 Ejes</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 10 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $299.00</p>
-                    </div>
-                </div>
+      <!-- Fila 2 (Productos 4 al 6) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-004.jpg"
+              class="card-img-top p-3"
+              alt="Producto 4"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-004</p>
+              <h5 class="card-title">Flash de Estudio 300W</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 12 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $220.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 11" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-011</p>
-                        <h5 class="card-title">Micrófono Inalámbrico de Solapa</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 14 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $135.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 12" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-012</p>
-                        <h5 class="card-title">Disparador Remoto Inalámbrico</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 35 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $22.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <!-- Fila 5 (Productos 13 al 15) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 13" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-013</p>
-                        <h5 class="card-title">Panel LED de Iluminación Continua</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 16 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $65.00</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-005.jpg"
+              class="card-img-top p-3"
+              alt="Producto 5"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-005</p>
+              <h5 class="card-title">Softbox 60x90cm</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 20 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $45.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 14" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-014</p>
-                        <h5 class="card-title">Fondo Fotográfico de Tela Verde</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 25 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $30.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 15" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-015</p>
-                        <h5 class="card-title">Monopié de Carbono</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 12 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $85.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <!-- Fila 6 (Productos 16 al 18) -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 16" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-016</p>
-                        <h5 class="card-title">Batería Recargable de Repuesto</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 45 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $40.00</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-006.jpg"
+              class="card-img-top p-3"
+              alt="Producto 6"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-006</p>
+              <h5 class="card-title">Mochila Fotográfica Antirrobo</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 18 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $75.00
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 17" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-017</p>
-                        <h5 class="card-title">Caja de Luz Portátil (Lightbox)</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 19 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $55.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="imgs/imagen1.png" class="card-img-top p-3" alt="Producto 18" style="height: 200px; object-fit: contain;">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Código:</strong> PROD-018</p>
-                        <h5 class="card-title">Filtro Polarizador CPL 77mm</h5>
-                        <p class="card-text mb-1"><strong>Cantidad en stock:</strong> 28 unidades</p>
-                        <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
-                        <p class="card-text text-success font-weight-bold">Precio: $50.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
+      <!-- Fila 3 (Productos 7 al 9) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-007.jpg"
+              class="card-img-top p-3"
+              alt="Producto 7"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-007</p>
+              <h5 class="card-title">Tarjeta SD 128GB V90</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 40 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $110.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-008.jpg"
+              class="card-img-top p-3"
+              alt="Producto 8"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-008</p>
+              <h5 class="card-title">Reflector Circular 5 en 1</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 22 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $25.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-009.jpg"
+              class="card-img-top p-3"
+              alt="Producto 9"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-009</p>
+              <h5 class="card-title">Kit de Limpieza para Lentes</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 50 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $15.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 4 (Productos 10 al 12) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-010.jpg"
+              class="card-img-top p-3"
+              alt="Producto 10"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-010</p>
+              <h5 class="card-title">Estabilizador Gimbal 3 Ejes</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 10 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $299.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-011.jpg"
+              class="card-img-top p-3"
+              alt="Producto 11"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-011</p>
+              <h5 class="card-title">Micrófono Inalámbrico de Solapa</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 14 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $135.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-012.jpg"
+              class="card-img-top p-3"
+              alt="Producto 12"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-012</p>
+              <h5 class="card-title">Disparador Remoto Inalámbrico</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 35 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $22.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 5 (Productos 13 al 15) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-013.jpg"
+              class="card-img-top p-3"
+              alt="Producto 13"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-013</p>
+              <h5 class="card-title">Panel LED de Iluminación Continua</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 16 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $65.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-014.jpg"
+              class="card-img-top p-3"
+              alt="Producto 14"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-014</p>
+              <h5 class="card-title">Fondo Fotográfico de Tela Verde</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 25 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $30.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-015.jpg"
+              class="card-img-top p-3"
+              alt="Producto 15"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-015</p>
+              <h5 class="card-title">Monopié de Carbono</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 12 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $85.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 6 (Productos 16 al 18) -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-016.jpg"
+              class="card-img-top p-3"
+              alt="Producto 16"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-016</p>
+              <h5 class="card-title">Batería Recargable de Repuesto</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 45 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $40.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-017.jpg"
+              class="card-img-top p-3"
+              alt="Producto 17"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-017</p>
+              <h5 class="card-title">Caja de Luz Portátil (Lightbox)</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 19 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $55.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="imgs/productos/PROD-018.jpg"
+              class="card-img-top p-3"
+              alt="Producto 18"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1"><strong>Código:</strong> PROD-018</p>
+              <h5 class="card-title">Filtro Polarizador CPL 77mm</h5>
+              <p class="card-text mb-1">
+                <strong>Cantidad en stock:</strong> 28 unidades
+              </p>
+              <p class="card-text mb-1"><strong>IVA (15%-0%):</strong> 15%</p>
+              <p class="card-text text-success font-weight-bold">
+                Precio: $50.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
