@@ -1,127 +1,200 @@
-<!--
-    PAGINA DE PROMOCIONES
-    Sitio web "Estudio de Fotografia" — Grupo 21
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio de Fotografia | Pagina Promociones</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio de Fotografía | Promociones</title>
 
-    <!-- Bootstrap 4.6.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="css/general.css" />
+
+    <!-- Scripts de Bootstrap y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  </head>
 
-    <!-- Logo del sitio, enlaza a la pagina principal -->
-    <div class="text-center mt-4 mb-2">
+  <body>
+    <!-- Logo: enlaza a la página principal -->
+    <header class="encabezado">
+      <div class="container text-center py-3">
         <a href="1-Página Principal.html">
-            <img src="imgs/imagen1.png" alt="Logo Estudio de Fotografia" height="80">
+          <img
+            src="imgs/logo.jpg"
+            alt="Logo Estudio de Fotografía"
+            class="logo"
+            height="80"
+          />
         </a>
-    </div>
+      </div>
+    </header>
 
-    <!-- Menu de navegacion: enlaces a las 4 paginas del sitio -->
-    <nav class="navbar navbar-expand-sm justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="1-Página Principal.html">Inicio</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="2-Página promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="3-Página de listado de productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
-            </li>
-        </ul>
+    <!-- Menú de navegación unificado -->
+    <nav class="navbar navbar-expand-sm navbar-dark menu-principal">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="1-Página Principal.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="2-Página promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="3-Página de listado de productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
+        </li>
+      </ul>
     </nav>
 
-    <!--
-        Grid de tarjetas de promociones: minimo 7 tarjetas, 3 por fila.
-    -->
-    <div class="container mt-4 mb-5">
-        <h2 class="text-center mb-4">Promociones</h2>
+    <!-- Contenido principal -->
+    <main class="container mt-4 mb-5">
+      <div class="encabezado-pagina text-center mb-5">
+        <h1 class="titulo-pagina">Promociones</h1>
+        <p class="subtitulo-pagina">
+          Encuentra ofertas especiales en equipos y accesorios de fotografía.
+        </p>
+      </div>
 
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 1</h5>
-                        <p class="card-text">$19.99</p>
-                    </div>
-                </div>
+      <!-- Grid de promociones: 3 por fila -->
+      <div class="row">
+      <!-- Productos 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-007.jpg" class="card-img-top p-3" alt="Promoción tarjeta SD" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Tarjeta SD 128GB V90</h2>
+              <p class="card-text">Almacenamiento para fotografías y videos de alta calidad.</p>
+              <p class="card-text text-muted"><del>$110.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $95.00</p>
             </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 2</h5>
-                        <p class="card-text">$24.99</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 3</h5>
-                        <p class="card-text">$14.99</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 4</h5>
-                        <p class="card-text">$9.99</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 5">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 5</h5>
-                        <p class="card-text">$29.99</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 6">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 6</h5>
-                        <p class="card-text">$12.50</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="imgs/imagen1.png" class="card-img-top" alt="Imagen de la promocion 7">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Nombre de la promocion 7</h5>
-                        <p class="card-text">$17.99</p>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </div>
+      <!-- Productos 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-006.jpg" class="card-img-top p-3" alt="Promoción mochila fotográfica" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Mochila Fotográfica Antirrobo</h2>
+              <p class="card-text">Protección y espacio para transportar tu equipo.</p>
+              <p class="card-text text-muted"><del>$75.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $65.00</p>
+            </div>
+          </div>
+        </div>
 
-</body>
+      <!-- Productos 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-005.jpg" class="card-img-top p-3" alt="Promoción softbox" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Softbox 60x90cm</h2>
+              <p class="card-text">Accesorio para mejorar la iluminación de tus fotografías.</p>
+              <p class="card-text text-muted"><del>$45.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $39.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-004.jpg" class="card-img-top p-3" alt="Promoción flash de estudio" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Flash de Estudio 300W</h2>
+              <p class="card-text">Iluminación para sesiones fotográficas de estudio.</p>
+              <p class="card-text text-muted"><del>$220.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $199.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-003.jpg" class="card-img-top p-3" alt="Promoción trípode de aluminio" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Trípode de Aluminio</h2>
+              <p class="card-text">Mayor estabilidad para fotografías y videos.</p>
+              <p class="card-text text-muted"><del>$95.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $79.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-002.jpg" class="card-img-top p-3" alt="Promoción lente 50mm" style="height: 220px; object-fit: contain;" />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Lente 50mm f/1.8</h2>
+              <p class="card-text">Lente compacto para retratos y fotografía general.</p>
+              <p class="card-text text-muted"><del>$180.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $159.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-001.jpg" 
+            class="card-img-top p-3" 
+            alt="Promoción cámara DSLR" 
+            style="height: 220px; object-fit: contain;" 
+            />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Cámara DSLR Profesional</h2>
+              <p class="card-text">Equipo ideal para fotografía profesional.</p>
+              <p class="card-text text-muted"><del>$850.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $799.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos A -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-008.jpg" 
+            class="card-img-top p-3" 
+            alt="Promoción cámara DSLR" 
+            style="height: 220px; object-fit: contain;" 
+            />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Reflector Circular 5 en 1
+</h2>
+              <p class="card-text">Portátil y plegable que modifica la iluminación de una escena.</p>
+              <p class="card-text text-muted"><del>$25.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $15.00.00</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Productos B -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="imgs/productos/PROD-009.jpg" 
+            class="card-img-top p-3" 
+            alt="Promoción cámara DSLR" 
+            style="height: 220px; object-fit: contain;" 
+            />
+            <div class="card-body text-center">
+              <h2 class="h5 card-title">Kit de Limpieza para Lentes
+</h2>
+              <p class="card-text">Herramientas y soluciones que eliminan suciedad.</p>
+              <p class="card-text text-muted"><del>$15.00</del></p>
+              <p class="card-text text-success font-weight-bold">Oferta: $7.00.00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </body>
 </html>
