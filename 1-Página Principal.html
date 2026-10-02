@@ -1,106 +1,174 @@
-<!-- PAGINA PRINCIPAL - Sitio web "Estudio de Fotografia" | Grupo 21 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio de Fotografia | Pagina Principal</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio de Fotografía | Página Principal</title>
 
-    <!-- Bootstrap 4.6.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="css/general.css" />
+
+    <!-- Scripts de Bootstrap y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  </head>
 
-    <!-- Logo del sitio, enlaza a la pagina principal -->
-    <div class="text-center mt-4 mb-2">
+  <body>
+    <!-- Logo: enlaza a la página principal -->
+    <header class="encabezado">
+      <div class="container text-center py-3">
         <a href="1-Página Principal.html">
-            <img src="imgs/image2.png" alt="Logo Estudio de Fotografia" height="80">
+          <img
+            src="imgs/logo.jpg"
+            alt="Logo Estudio de Fotografía"
+            class="logo"
+            height="80"
+          />
         </a>
-    </div>
+      </div>
+    </header>
 
-    <!-- Menu de navegacion: enlaces a las 4 paginas del sitio -->
-    <nav class="navbar navbar-expand-sm justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="1-Página Principal.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="2-Página promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="3-Página de listado de productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
-            </li>
-        </ul>
+    <!-- Menú de navegación unificado -->
+    <nav class="navbar navbar-expand-sm navbar-dark menu-principal">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="1-Página Principal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="2-Página promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="3-Página de listado de productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="4-Página de Sucursales.html">Sucursales</a>
+        </li>
+      </ul>
     </nav>
 
-    <!--
-        Carrusel de imagenes mostrando un minimo de 7 imagenes de productos/promociones.
-    -->
-    <div class="container mt-4">
-        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+    <!-- Contenido principal -->
+    <div class="container mt-4 mb-5">
+      <div class="encabezado-pagina text-center mb-4">
+        <h1 class="titulo-pagina">Estudio de Fotografía</h1>
+        <p class="subtitulo-pagina">
+          Equipos, accesorios y servicios para llevar tus fotografías a otro nivel.
+        </p>
+      </div>
 
-            <ul class="carousel-indicators">
-                <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="1"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="2"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="3"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="4"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="5"></li>
-                <li data-target="#carouselPrincipal" data-slide-to="6"></li>
-            </ul>
+      <!-- Carrusel principal: mínimo 7 imágenes -->
+      <div id="carouselPrincipal" class="carousel slide mb-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="3"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="4"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="5"></li>
+          <li data-target="#carouselPrincipal" data-slide-to="6"></li>
+        </ol>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 1 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 2 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 3 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 4 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 5 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 6 - producto o promocion">
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 7 - producto o promocion">
-                </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#carouselPrincipal" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselPrincipal" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/principal/CARR-001.jpg" class="d-block w-100" alt="Productos de fotografía 1" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-002.jpg" class="d-block w-100" alt="Productos de fotografía 2" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-003.jpg" class="d-block w-100" alt="Productos de fotografía 3" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-004.jpg" class="d-block w-100" alt="Productos de fotografía 4" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-005.jpg" class="d-block w-100" alt="Productos de fotografía 5" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-006.jpg" class="d-block w-100" alt="Productos de fotografía 6" style="height: auto; object-fit: cover;" />
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/principal/CARR-007.jpg" class="d-block w-100" alt="Productos de fotografía 7" style="height: auto; object-fit: cover;" />
+          </div>
         </div>
-    </div>
 
-    <!-- Seccion Mision y Vision, distribuida en dos columnas -->
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h4>MISION</h4>
-                <p>Texto de la mision del sitio web</p>
+        <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+
+      <!-- Misión y visión -->
+      <section class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="h4 font-weight-bold">Misión</h2>
+              <p class="card-text">
+                Ofrecer equipos y accesorios de fotografía de calidad para
+                estudiantes, aficionados y profesionales, brindando variedad de
+                productos y una atención cercana a nuestros clientes.
+              </p>
             </div>
-            <div class="col-md-6">
-                <h4>VISION</h4>
-                <p>Texto de la vision del sitio web</p>
-            </div>
+          </div>
         </div>
-    </div>
 
-</body>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="h4 font-weight-bold">Visión</h2>
+              <p class="card-text">
+                Ser un estudio de fotografía reconocido por la variedad de sus
+                productos, la atención a sus clientes y la presencia de sus
+                sucursales en diferentes ciudades del Ecuador.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accesos principales -->
+      <section class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <h2 class="h5 font-weight-bold">Promociones</h2>
+              <p class="card-text">Consulta nuestras ofertas y productos destacados.</p>
+              <a href="2-Página promociones.html" class="btn btn-primary">Ver promociones</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <h2 class="h5 font-weight-bold">Productos</h2>
+              <p class="card-text">Encuentra cámaras, lentes, iluminación y accesorios.</p>
+              <a href="3-Página de listado de productos.html" class="btn btn-primary">Ver productos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <h2 class="h5 font-weight-bold">Sucursales</h2>
+              <p class="card-text">Consulta nuestras sucursales y sus direcciones.</p>
+              <a href="4-Página de Sucursales.html" class="btn btn-primary">Ver sucursales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
